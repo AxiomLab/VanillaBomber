@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Controller</title>
+    <style>
+        #log {
+            width: 100%;
+            height: 200px;
+            overflow-y: auto;
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            font-family: monospace;
+            padding: 10px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+<h1>Bot Controller</h1>
+<div>
+    <label for="host">Host:</label>
+    <input type="text" id="host" value="localhost">
+</div>
+<div>
+    <label for="port">Port:</label>
+    <input type="number" id="port" value="25565">
+</div>
+<div>
+    <label for="loginRequired">Login Required:</label>
+    <input type="checkbox" id="loginRequired">
+</div>
+<div>
+    <label for="messages">Messages (comma separated):</label>
+    <textarea id="messages"></textarea>
+</div>
+<div>
+    <button id="startBots">Start Bots</button>
+    <button id="stopBots">Stop Bots</button>
+</div>
+<div id="log"></div>
+
+<script src="renderer.js"></script>
+</body>
+</html>
